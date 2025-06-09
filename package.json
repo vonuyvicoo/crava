@@ -1,0 +1,45 @@
+{
+  "name": "crava",
+  "version": "1.0.0",
+  "description": "AI-powered web scraping that extracts structured data as JSON",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "crava": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "web-scraping",
+    "ai",
+    "json",
+    "puppeteer",
+    "automation",
+    "data-extraction"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "puppeteer": "^22.15.0",
+    "@google/generative-ai": "^0.17.1",
+    "csv-writer": "^1.6.0",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/jest": "^29.5.8",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ]
+}
